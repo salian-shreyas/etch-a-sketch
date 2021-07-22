@@ -2,6 +2,7 @@
     --grid-rows: 16;
     --grid-columns: 16;
     --grid-item-size: 30px;
+    --pen-color: #5f3;
 }
 
 body {
@@ -19,4 +20,8 @@ body {
 
 .grid-item {
     border: 1px solid #fff;
+}
+
+.pen {
+    background-color: var(--pen-color);
 }

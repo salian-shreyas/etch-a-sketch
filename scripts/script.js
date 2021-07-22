@@ -9,7 +9,12 @@ for (let i = 0; i < gridRows; ++i) {
         const gridDiv = document.createElement('div');
         gridDiv.classList.add('grid-item');
 
+        gridDiv.addEventListener('mouseenter', fillColor);
         container.appendChild(gridDiv);
     }
 } 
 
+
+function fillColor(e) {
+    e.target.classList.add('pen');
+}
