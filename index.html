@@ -14,7 +14,34 @@
 </head>
 <body>
     
-    <div class="container"></div>
+    <section>
+
+        <div id="pad-customization">
+            <div>
+                <label for="pen-color">Pen Color: </label>
+                <input type="color" name="penColor" value="#ffffff" id="pen-color" placeholder="white"/>
+            </div>
+            <div>
+                <label for="pad-color">Pad Color: </label>
+                <input type="color" name="padColor" value="#000000" id="pad-color" placeholder="black"/>
+            </div>
+            <div>
+                <div>
+                    <label for="pixel-number">Pixels: </label>
+                    <input type="number" name="pixelNumber" value="20" id="pixel-number" min="1" max="100" placeholder="20"/>
+                </div>
+                <div>
+                    <button id="pixel-submit">Changes Pixels</button>
+                </div>
+            </div>
+            <div>
+                <button id="clear-button">Clear</button>
+            </div>
+        </div>
+
+        <div class="container"></div>
+
+    </section>
     
 </body>
 </html>

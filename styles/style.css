@@ -1,27 +1,90 @@
-:root {
-    --grid-rows: 16;
-    --grid-columns: 16;
-    --grid-item-size: 30px;
-    --pen-color: #5f3;
-}
-
 body {
     margin: 0;
     padding: 0;
     background-color: #000e;
     color: #fff;
+    background: linear-gradient(45deg, #4DC6F9, #F2A795);
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#pad-customization {
+    height: 410px;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: tomato;
+    border: 4px solid dodgerblue;
+    border-radius: 4px;
+    box-shadow: 0 0 2em #000d;
+    box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+}
+
+#pad-customization div {
+    font-family: monospace;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+}
+
+#pixel-submit {
+    margin-top: 6px;
+    width: 16ch;
+    padding: 4px;
+    background-color: dodgerblue;
+    font-family: monospace;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+#clear-button {
+    width: 16ch;
+    font-family: monospace;
+    padding: 4px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    border-color: #fff;
+    border-radius: 6px;
+    transition: all 0.3s;
+    box-shadow: 0 0 8px #000d;
+    box-sizing: border-box;
+}
+
+#clear-button:hover {
+    transform: scale(1.02);
+}
+
+#pen-color, #pad-color, #pixel-number {
+    width: 6ch;
+    border: 2px solid dodgerblue;
+    border-radius: 6px;
+}
+
+#pixel-number {
+    margin-left: 2ch;
 }
 
 .container {
     display: grid;
-    grid-template-rows: repeat(var(--grid-rows), var(--grid-item-size));
-    grid-template-columns: repeat(var(--grid-columns), var(--grid-item-size));
+    width: 400px;
+    height: 400px;
+    border: 10px solid tomato;
+    border-radius: 5px;
+    background-color: #000d;
+    box-shadow: 0 0 2em #000d;
 }
 
 .grid-item {
-    border: 1px solid #fff;
-}
-
-.pen {
-    background-color: var(--pen-color);
+    display: inline-block; 
 }
