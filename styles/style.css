@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#grid-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row {
+    flex-grow: 1;
+    display: flex;
+}
+
+.square-div {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+}
