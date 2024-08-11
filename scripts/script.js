@@ -23,3 +23,12 @@ function createSquareDiv() {
     squareDiv.setAttribute("class", "square-div");
     return squareDiv;
 }
+
+gridContainer.addEventListener("mouseover", addBackgroundColor);
+
+function addBackgroundColor (event) {
+    const squareDiv = event.target;
+    if (!squareDiv.classList.contains("color-square")) { 
+        squareDiv.classList.add("color-square");
+    }
+}

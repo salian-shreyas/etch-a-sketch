@@ -20,5 +20,9 @@ body {
 
 .square-div {
     flex-grow: 1;
-    border: 1px solid #ddd;
+    border: 1px solid #1b1919;
+}
+
+.color-square {
+    background-color: #d79c9c;
 }
