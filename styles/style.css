@@ -4,11 +4,15 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding:20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #grid-container {
-    height: 100vh;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -25,4 +29,17 @@ body {
 
 .color-square {
     background-color: #d79c9c;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-container button {
+    flex-grow: 1;
+    height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
